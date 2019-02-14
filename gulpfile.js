@@ -1,6 +1,9 @@
 //Require in Gulp and other dependencies
 const gulp = require('gulp'),
-postcss = require('gulp-postcss');
+postcss = require('gulp-postcss'),
+autoprefixer = require('autoprefixer'),
+cssvars = require('postcss-simple-vars'),
+nested = require('postcss-nested');
 
 
 // define often reused variables
@@ -23,7 +26,7 @@ function js(done) {
 
 function css(done) {
     gulp.src(main_style)
-    .pipe()
+    .pipe(postcss([cssvars, nested, autoprefixer]))
     .pipe(gulp.dest(temp_styles));
     done();
 }

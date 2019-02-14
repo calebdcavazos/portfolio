@@ -1,7 +1,14 @@
 body {
-    color: red;
+    color: #2f5572;
+    -webkit-columns: 300px 2;
+            columns: 300px 2;
 }
 
 h1 {
     font-weight: 300;
 }
+
+.box a {
+        display: block;
+        padding: 10px;
+    }
