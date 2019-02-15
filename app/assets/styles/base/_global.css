@@ -1,0 +1,10 @@
+body {
+    color: black;
+    font-family: 'Segoe UI';
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
