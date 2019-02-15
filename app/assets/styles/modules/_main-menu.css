@@ -1,0 +1,16 @@
+.main-menu {
+    position: fixed;
+    top: 50px;
+    left: 90%;
+    text-align: right;
+    z-index: 2;
+
+    ul {
+       list-style: none;
+    }
+    
+    li {
+        display: inline-block;
+    }
+
+}
