@@ -4,7 +4,8 @@ postcss = require('gulp-postcss'),
 autoprefixer = require('autoprefixer'),
 cssvars = require('postcss-simple-vars'),
 nested = require('postcss-nested'),
-cssimport = require('postcss-import');
+cssimport = require('postcss-import'),
+hexrgba = require('postcss-hexrgba');
 
 
 // define often reused variables
@@ -27,7 +28,7 @@ function js(done) {
 
 function css(done) {
     gulp.src(main_style)
-    .pipe(postcss([cssimport, cssvars, nested, autoprefixer]))
+    .pipe(postcss([cssImport, cssvars, nested, hexrgba, autoprefixer]))
     .pipe(gulp.dest(temp_styles));
     done();
 }

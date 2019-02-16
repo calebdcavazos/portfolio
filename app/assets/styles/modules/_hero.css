@@ -1,17 +1,18 @@
 .hero {
     position: relative;
-}
 
-.hero__text-content {
-    position: absolute;
-    top: 37%;
-    left: 14%;
+    &__text-content {
+        position: absolute;
+        top: 37%;
+        left: 14%;
 
-    h1 {
-        color: $mainBlue;
-        font-weight: 200;
-        font-size: 2.7rem;
-        text-shadow: 1px 1px 10px #606060;
+        h1 {
+            color: $mainBlue;
+            font-weight: 200;
+            font-size: 2.7rem;
+            text-shadow: 1px 1px 10px #606060;
+        }
+
     }
-
 }
+

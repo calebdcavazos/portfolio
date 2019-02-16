@@ -364,24 +364,23 @@ img {
 }
 
 .hero__text-content {
-    position: absolute;
-    top: 37%;
-    left: 14%;
+        position: absolute;
+        top: 37%;
+        left: 14%;
 
-}
-
-.hero__text-content h1 {
-        color: #D2E8F6;
-        font-weight: 200;
-        font-size: 2.7rem;
-        text-shadow: 1px 1px 10px #606060;
     }
 
+.hero__text-content h1 {
+            color: #D2E8F6;
+            font-weight: 200;
+            font-size: 2.7rem;
+            text-shadow: 1px 1px 10px #606060;
+        }
+
 .main-menu {
-    position: fixed;
+    position: absolute;
     top: 50px;
     left: 90%;
-    text-align: right;
     z-index: 2;
 
 }
