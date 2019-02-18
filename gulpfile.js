@@ -4,8 +4,9 @@ postcss = require('gulp-postcss'),
 autoprefixer = require('autoprefixer'),
 cssvars = require('postcss-simple-vars'),
 nested = require('postcss-nested'),
-cssimport = require('postcss-import'),
-hexrgba = require('postcss-hexrgba');
+cssImport = require('postcss-import'),
+hexrgba = require('postcss-hexrgba'),
+browserSync = require('browser-sync').create();
 
 
 // define often reused variables
@@ -17,13 +18,21 @@ var temp_styles = './app/temp/styles';
 
 //create all functions for gulp to run
 function html(done) {
-    console.log('Html task is running');
+    browserSync.reload();
     done();
 }
 
 function js(done) {
     console.log('JS task is running');
     done();
+}
+
+function startBrowser(done) {
+    browserSync.init({
+        server: {
+            baseDir: "app"
+        }
+    });
 }
 
 function css(done) {
@@ -37,9 +46,16 @@ function watch_index() {
     gulp.watch(index, html);
 }
 
-function watch_css() {
-    gulp.watch(all_styles, css);
+function cssInject() {
+    gulp.src('./app/temp/styles/style.css')
+        .pipe(browserSync.stream());
 }
+
+function watch_css() {
+    gulp.watch(all_styles, gulp.series(css, cssInject));
+}
+
+
 
 
 //define gulp tasks
@@ -47,6 +63,6 @@ gulp.task('html', html);
 gulp.task('js', js);
 gulp.task('css', css);
 gulp.task('default', gulp.parallel(html, js));
-gulp.task('watch', gulp.parallel(watch_index, watch_css));
+gulp.task('watch', gulp.parallel(watch_index, watch_css, startBrowser));
 
 
