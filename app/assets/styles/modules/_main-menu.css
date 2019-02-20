@@ -1,9 +1,11 @@
 .main-menu {
     position: absolute;
     width: 100%;
-    top: 50px;
-    left: 90%;
     z-index: 2;
+
+    &__btn-container {
+        float: right;
+    }
 
     ul {
        list-style: none;

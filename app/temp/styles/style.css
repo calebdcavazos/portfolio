@@ -380,11 +380,13 @@ img {
 .main-menu {
     position: absolute;
     width: 100%;
-    top: 50px;
-    left: 90%;
     z-index: 2;
 
 }
+
+.main-menu__btn-container {
+        float: right;
+    }
 
 .main-menu ul {
        list-style: none;
@@ -394,6 +396,10 @@ img {
         display: inline-block;
     }
 
+.wrapper {
+    padding-left: 18px;
+    padding-right: 200px;
+}
 
 
 
