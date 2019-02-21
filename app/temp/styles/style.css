@@ -350,7 +350,7 @@ template {
 }
 
 body {
-    color: black;
+    color: #444444;
     font-family: 'Segoe UI';
 }
 
@@ -378,27 +378,43 @@ img {
         }
 
 .main-menu {
-    position: absolute;
-    width: 100%;
-    z-index: 2;
+     position: fixed;
+     z-index: 2;
+     width: 100%;
+ }
 
-}
+.main-menu__contact-btn {
+         background-color: #D2E8F6;
+     }
 
-.main-menu__btn-container {
-        float: right;
-    }
+nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+     }
 
-.main-menu ul {
-       list-style: none;
-    }
+nav a {
+         text-decoration: none;
+         text-align: center;
+         color: #444444;
+         display: block;
+         padding: 10px 25px;
+     }
 
-.main-menu li {
-        display: inline-block;
-    }
+nav a:hover {
+         background-color: #8DB2DE;
+     }
 
 .wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.btn {
     padding-left: 18px;
-    padding-right: 200px;
+    padding-right: 18px;
+    background-color: #D2E8F6;
 }
 
 

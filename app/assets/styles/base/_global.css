@@ -1,7 +1,9 @@
 $mainBlue: #D2E8F6;
+$mainGray: #444444;
+$darkerBlue: #8DB2DE;
 
 body {
-    color: black;
+    color: $mainGray;
     font-family: 'Segoe UI';
 }
 
