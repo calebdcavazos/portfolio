@@ -1,0 +1,44 @@
+.portfolio {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__flex-container {
+        display: flex;
+        justify-content: center;
+        height: 300px;
+    }
+
+    img {
+        width: 25%;
+        height: auto;
+    }
+    
+    &__centered {
+       margin: auto 20px;
+    }
+
+    &__text-box {
+        padding: 18px;
+        width: 30%;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    &__order-first {
+        order: 1;
+
+        h3 {
+            text-align: right;
+        }
+    }
+
+    &__order-second {
+        order: 2;
+    }
+
+}

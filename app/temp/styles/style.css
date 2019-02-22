@@ -445,5 +445,49 @@ nav a:hover {
         font-weight: 400;
     }
 
+.portfolio {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.portfolio__flex-container {
+        display: flex;
+        justify-content: center;
+        height: 300px;
+    }
+
+.portfolio img {
+        width: 25%;
+        height: auto;
+    }
+
+.portfolio__centered {
+       margin: auto 20px;
+    }
+
+.portfolio__text-box {
+        padding: 18px;
+        width: 30%;
+    }
+
+.portfolio h3 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+.portfolio__order-first {
+        order: 1;
+    }
+
+.portfolio__order-first h3 {
+            text-align: right;
+        }
+
+.portfolio__order-second {
+        order: 2;
+    }
 
 
