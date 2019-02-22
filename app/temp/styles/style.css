@@ -421,6 +421,8 @@ nav a:hover {
     height: 100vh;
     display: flex;
     justify-content: center;
+
+
 }
 
 .about__text-box {
@@ -436,6 +438,11 @@ nav a:hover {
 
 .about__centered {
        margin: auto 20px;
+    }
+
+.about h2 {
+        font-size: 2rem;
+        font-weight: 400;
     }
 
 
