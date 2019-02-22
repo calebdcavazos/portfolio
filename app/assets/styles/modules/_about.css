@@ -1,0 +1,20 @@
+.about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    &__text-box {
+        padding: 18px;
+        width: 30%;
+    }
+
+    &__image {
+        border-radius: 50%;
+        height: auto;
+        width: 25%;
+    }
+
+    &__centered {
+       margin: auto 20px;
+    }
+}

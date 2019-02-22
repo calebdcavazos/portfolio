@@ -417,5 +417,26 @@ nav a:hover {
     background-color: #D2E8F6;
 }
 
+.about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.about__text-box {
+        padding: 18px;
+        width: 30%;
+    }
+
+.about__image {
+        border-radius: 50%;
+        height: auto;
+        width: 25%;
+    }
+
+.about__centered {
+       margin: auto 20px;
+    }
+
 
 
