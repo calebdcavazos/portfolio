@@ -1,9 +1,10 @@
 .hero {
     position: relative;
+    height: 100vh;
 
     &__text-content {
         position: absolute;
-        top: 37%;
+        top: 41%;
         left: 14%;
 
         h1 {

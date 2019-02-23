@@ -5,10 +5,11 @@ $darkerBlue: #8DB2DE;
 body {
     color: $mainGray;
     font-family: 'Segoe UI';
+    font-size: 10px;
 }
 
 
 img {
-    max-width: 100%;
-    height: auto;
+    max-height: 100%;
+    width: auto;
 }
