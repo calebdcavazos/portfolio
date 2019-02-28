@@ -2,6 +2,12 @@ $mainBlue: #D2E8F6;
 $mainGray: #444444;
 $darkerBlue: #8DB2DE;
 
+@define-mixin atSmall {
+    @media (min-width: 530px) {
+        @mixin-content;
+    }
+}
+
 body {
     color: $mainGray;
     font-family: 'Segoe UI';

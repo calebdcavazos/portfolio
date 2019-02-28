@@ -3,20 +3,37 @@
     display: flex;
     justify-content: center;
     font-size: 1rem;
+    flex-direction: column;
+
+    @media (min-width: 530px) {
+     flex-direction: row;   
+    }
 
     &__text-box {
-        padding: 18px;
-        width: 30%;
+        padding: 5px;
+        @media (min-width: 530px) {
+            padding: 18px;
+            width: 30%;
+        }
     }
 
     &__image {
         border-radius: 50%;
         height: auto;
-        width: 400px;
+        width: 300px;
+
+        @media (min-width: 530px) {
+            width: 400px;
+        }
     }
 
     &__centered {
-       margin: auto 20px;
+       margin: 10px auto;
+
+        @media (min-width: 530px) {
+            margin: auto 20px;
+        }
+
     }
 
     h2 {
