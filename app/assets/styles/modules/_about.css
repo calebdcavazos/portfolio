@@ -5,13 +5,14 @@
     font-size: 1rem;
     flex-direction: column;
 
-    @media (min-width: 530px) {
+    @media (min-width: 1000px) {
      flex-direction: row;   
     }
 
     &__text-box {
         padding: 5px;
-        @media (min-width: 530px) {
+
+        @media (min-width: 1000px) {
             padding: 18px;
             width: 30%;
         }
@@ -22,7 +23,7 @@
         height: auto;
         width: 300px;
 
-        @media (min-width: 530px) {
+        @media (min-width: 1000px) {
             width: 400px;
         }
     }
@@ -30,7 +31,7 @@
     &__centered {
        margin: 10px auto;
 
-        @media (min-width: 530px) {
+        @media (min-width: 1000px) {
             margin: auto 20px;
         }
 

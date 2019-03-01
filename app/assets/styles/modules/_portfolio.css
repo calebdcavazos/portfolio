@@ -8,21 +8,42 @@
     &__flex-container {
         display: flex;
         justify-content: center;
-        height: 300px;
+        flex-direction: column;
+        padding-top: 60px;
+
+        @media (min-width: 800px) {
+            flex-direction: row;
+            height: 300px;
+            padding-top: 0;
+        }
+        
     }
 
     img {
-        width: 25%;
+        width: 300px;
         height: auto;
+
+        @media (min-width: 800px) {
+            width: 400px;
+        }
     }
     
     &__centered {
-       margin: auto 20px;
+       margin: auto;
+
+       @media (min-width: 800px) {
+           margin: auto 20px;
+       }
     }
 
     &__text-box {
-        padding: 18px;
-        width: 30%;
+        padding: 5px;
+        width: 300px;
+
+        @media (min-width: 800px) {
+            padding: 18px;
+            width: 30%;
+        }
     }
 
     h3 {
@@ -31,15 +52,19 @@
     }
 
     &__order-first {
-        order: 1;
+        @media (min-width: 800px) {
+            order: 1;
 
-        h3 {
-            text-align: right;
+            h3 {
+                text-align: right;
+            }
         }
     }
 
     &__order-second {
-        order: 2;
+        @media (min-width: 800px) {
+            order: 2;
+        }
     }
 
 }

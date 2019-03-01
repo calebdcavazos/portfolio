@@ -459,7 +459,7 @@ nav a:hover {
 
 }
 
-@media (min-width: 530px) {
+@media (min-width: 1000px) {
 
 .about {
      flex-direction: row
@@ -472,7 +472,7 @@ nav a:hover {
         padding: 5px;
     }
 
-@media (min-width: 530px) {
+@media (min-width: 1000px) {
 
 .about__text-box {
             padding: 18px;
@@ -486,7 +486,7 @@ nav a:hover {
         width: 300px;
     }
 
-@media (min-width: 530px) {
+@media (min-width: 1000px) {
 
 .about__image {
             width: 400px
@@ -498,7 +498,7 @@ nav a:hover {
 
     }
 
-@media (min-width: 530px) {
+@media (min-width: 1000px) {
 
 .about__centered {
             margin: auto 20px
@@ -523,36 +523,76 @@ nav a:hover {
 .portfolio__flex-container {
         display: flex;
         justify-content: center;
-        height: 300px;
+        flex-direction: column;
+        padding-top: 60px;
+        
     }
 
+@media (min-width: 800px) {
+
+.portfolio__flex-container {
+            flex-direction: row;
+            height: 300px;
+            padding-top: 0
+        
+    }
+        }
+
 .portfolio img {
-        width: 25%;
+        width: 300px;
         height: auto;
     }
 
+@media (min-width: 800px) {
+
+.portfolio img {
+            width: 400px
+    }
+        }
+
 .portfolio__centered {
-       margin: auto 20px;
+       margin: auto;
     }
 
-.portfolio__text-box {
-        padding: 18px;
-        width: 30%;
+@media (min-width: 800px) {
+
+.portfolio__centered {
+           margin: auto 20px
     }
+       }
+
+.portfolio__text-box {
+        padding: 5px;
+        width: 300px;
+    }
+
+@media (min-width: 800px) {
+
+.portfolio__text-box {
+            padding: 18px;
+            width: 30%
+    }
+        }
 
 .portfolio h3 {
         font-size: 2rem;
         font-weight: 400;
     }
 
+@media (min-width: 800px) {
+
 .portfolio__order-first {
-        order: 1;
+            order: 1
     }
 
-.portfolio__order-first h3 {
-            text-align: right;
+            .portfolio__order-first h3 {
+                text-align: right;
+            }
         }
 
+@media (min-width: 800px) {
+
 .portfolio__order-second {
-        order: 2;
+            order: 2
     }
+        }
