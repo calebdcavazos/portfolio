@@ -7,6 +7,11 @@
         left: 14%;
 
         @media (min-width: 530px) {
+            top: 30%;
+            left: 14%;
+        }
+        
+        @media (min-width: 1000px) {
             top: 37%;
             left: 14%;
         }

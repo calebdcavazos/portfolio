@@ -4,7 +4,22 @@
     padding-right: 1rem;
 
     @media (min-width: 530px) {
-    padding-left: 10rem;
-    padding-right: 10rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    @media (min-width: 800px) {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    @media (min-width: 1000px) {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+    @media (min-width: 1400px) {
+        padding-left: 10rem;
+        padding-right: 10rem;
     }
 }

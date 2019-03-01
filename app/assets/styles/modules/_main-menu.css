@@ -1,10 +1,37 @@
  .main-menu {
+     
      position: fixed;
      z-index: 2;
      width: 100%;
+     background-color: rgba(50, 129, 222, 1);
+
+     @media (min-width: 530px) {
+         background-color: rgba(50, 129, 222, 0);
+     }
 
      &__contact-btn {
          background-color: $mainBlue;
+     }
+
+     &__is-visible {
+         display: flex;
+     }
+
+     &__is-hidden {
+         display: none;
+     }
+
+     &__menu-icon {
+         width: 20px;
+         height: 20px;
+         background-color: $mainBlue;
+         position: absolute;
+         top: 10px;
+         right: 10px;
+
+         @media (min-width: 530px) {
+             display: none;
+         }
      }
  }
  
@@ -13,8 +40,13 @@
     ul {
         list-style-type: none;
         padding: 0;
-        display: flex;
-        justify-content: flex-end;
+        display: none;
+        justify-content: center;
+
+        @media (min-width: 530px) {
+            justify-content: flex-end;
+            display: flex;
+        }
      }
 
      a {
@@ -23,7 +55,11 @@
          color: $mainGray;
          display: block;
          padding: 10px 25px;
-         font-size: 1rem;
+         font-size: .9rem;
+
+         @media (min-width: 530px) {
+             font-size: 1rem;
+         }
      }
 
      a:hover {

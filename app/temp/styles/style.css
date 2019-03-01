@@ -386,6 +386,15 @@ img {
 @media (min-width: 530px) {
 
 .hero__text-content {
+            top: 30%;
+            left: 14%
+
+    }
+        }
+
+@media (min-width: 1000px) {
+
+.hero__text-content {
             top: 37%;
             left: 14%
 
@@ -400,21 +409,62 @@ img {
         }
 
 .main-menu {
+     
      position: fixed;
      z-index: 2;
      width: 100%;
+     background-color: rgba(50, 129, 222, 1);
  }
+
+@media (min-width: 530px) {
+
+.main-menu {
+         background-color: rgba(50, 129, 222, 0)
+ }
+     }
 
 .main-menu__contact-btn {
          background-color: #D2E8F6;
      }
 
+.main-menu__is-visible {
+         display: flex;
+     }
+
+.main-menu__is-hidden {
+         display: none;
+     }
+
+.main-menu__menu-icon {
+         width: 20px;
+         height: 20px;
+         background-color: #D2E8F6;
+         position: absolute;
+         top: 10px;
+         right: 10px;
+     }
+
+@media (min-width: 530px) {
+
+.main-menu__menu-icon {
+             display: none
+     }
+         }
+
 nav ul {
         list-style-type: none;
         padding: 0;
-        display: flex;
-        justify-content: flex-end;
+        display: none;
+        justify-content: center;
      }
+
+@media (min-width: 530px) {
+
+nav ul {
+            justify-content: flex-end;
+            display: flex
+     }
+        }
 
 nav a {
          text-decoration: none;
@@ -422,8 +472,15 @@ nav a {
          color: #444444;
          display: block;
          padding: 10px 25px;
-         font-size: 1rem;
+         font-size: .9rem;
      }
+
+@media (min-width: 530px) {
+
+nav a {
+             font-size: 1rem
+     }
+         }
 
 nav a:hover {
          background-color: #8DB2DE;
@@ -438,8 +495,32 @@ nav a:hover {
 @media (min-width: 530px) {
 
 .wrapper {
-    padding-left: 10rem;
-    padding-right: 10rem
+        padding-left: 4rem;
+        padding-right: 4rem
+}
+    }
+
+@media (min-width: 800px) {
+
+.wrapper {
+        padding-left: 6rem;
+        padding-right: 6rem
+}
+    }
+
+@media (min-width: 1000px) {
+
+.wrapper {
+        padding-left: 8rem;
+        padding-right: 8rem
+}
+    }
+
+@media (min-width: 1400px) {
+
+.wrapper {
+        padding-left: 10rem;
+        padding-right: 10rem
 }
     }
 
@@ -524,7 +605,7 @@ nav a:hover {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding-top: 60px;
+        padding-top: 70px;
         
     }
 
