@@ -677,3 +677,25 @@ nav a:hover {
             order: 2
     }
         }
+
+.contact {
+    padding: 2rem;
+}
+
+.contact h3 {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+.contact__icon {
+        font-size: 3rem;
+        margin: 1rem;
+    }
+
+.contact a {
+        color: #444444;
+    }
+
+.contact a:hover {
+        color: #8DB2DE;
+    }

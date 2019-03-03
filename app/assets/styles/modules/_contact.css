@@ -1,0 +1,21 @@
+.contact {
+    padding: 2rem;
+    
+    h3 {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    &__icon {
+        font-size: 3rem;
+        margin: 1rem;
+    }
+
+    a {
+        color: $mainGray;
+    }
+
+    a:hover {
+        color: $darkerBlue;
+    }
+}
