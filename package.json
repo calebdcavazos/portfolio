@@ -6,6 +6,7 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.2",
     "autoprefixer": "^9.4.7",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
