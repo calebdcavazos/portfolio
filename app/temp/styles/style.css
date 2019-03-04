@@ -679,18 +679,39 @@ nav a:hover {
         }
 
 .contact {
-    padding: 2rem;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.94);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .contact h3 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 300;
+        margin: 0 auto;
+    }
+
+.contact__icons {
+        margin: 0 auto;
     }
 
 .contact__icon {
-        font-size: 3rem;
+        font-size: 2rem;
         margin: 1rem;
     }
+
+@media (min-width: 530px) {
+
+.contact__icon {
+            font-size: 3rem
+    }
+        }
 
 .contact a {
         color: #444444;
