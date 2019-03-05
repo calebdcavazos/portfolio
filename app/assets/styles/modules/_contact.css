@@ -9,11 +9,24 @@
     bottom: 0;
     left: 0;
     right: 0;
+    opacity: 0;
+    visibility: hidden;
     
     h3 {
         font-size: 2.5rem;
         font-weight: 300;
         margin: 0 auto;
+    }
+
+    &__text {
+        margin: 0 auto;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0;
+
+        @media (min-width: 530px) {
+            font-size: 2rem;
+        }
     }
 
     &__icons {
@@ -22,18 +35,36 @@
 
     &__icon {
         font-size: 2rem;
-        margin: 1rem;
+        margin: 0.3rem;
 
         @media (min-width: 530px) {
             font-size: 3rem;
+            margin: 1rem;
         }
     }
 
     a {
         color: $mainGray;
+        text-decoration: none;
     }
 
     a:hover {
         color: $darkerBlue;
+    }
+
+    &__close {
+        font-size: 2rem;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer; 
+
+        @media (min-width: 530px) {
+            font-size: 3rem;
+        }
+
+        &:hover {
+            color: $darkerBlue;
+        }
     }
 }
