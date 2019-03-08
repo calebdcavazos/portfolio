@@ -1,7 +1,7 @@
 .wrapper {
     
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
 
     @media (min-width: 530px) {
         padding-left: 4rem;

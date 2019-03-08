@@ -413,14 +413,18 @@ img {
      position: fixed;
      z-index: 2;
      width: 100%;
-     background-color: rgba(50, 129, 222, 1);
- }
+     transition: background 1s ease-out;
+}
+
+.main-menu__is-toggled {
+         background-color: rgba(50, 129, 222, 0.8);
+     }
 
 @media (min-width: 530px) {
 
 .main-menu {
          background-color: rgba(50, 129, 222, 0)
- }
+}
      }
 
 .main-menu__contact-btn {
@@ -442,6 +446,7 @@ img {
          position: absolute;
          top: 10px;
          right: 10px;
+         cursor: pointer;
      }
 
 @media (min-width: 530px) {
@@ -451,45 +456,59 @@ img {
      }
          }
 
-nav ul {
-        list-style-type: none;
-        padding: 0;
-        display: none;
-        justify-content: center;
-     }
-
-@media (min-width: 530px) {
-
-nav ul {
-            justify-content: flex-end;
-            display: flex
-     }
+.main-menu__menu-content ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            opacity: 0;
+            -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+            justify-content: flex-start;
+            transition: all 1s ease-out;
         }
 
-nav a {
-         text-decoration: none;
-         text-align: center;
-         color: #444444;
-         display: block;
-         padding: 10px 25px;
-         font-size: .9rem;
-     }
+@media (min-width: 530px) {
+
+.main-menu__menu-content ul {
+                justify-content: flex-end;
+                display: flex;
+                opacity: 1;
+                -webkit-transform: scaleX(1);
+                        transform: scaleX(1)
+        }
+            }
+
+.main-menu__menu-content--is-visible ul {
+                display: flex;
+                opacity: 1;
+                -webkit-transform: scaleX(1);
+                        transform: scaleX(1);
+            }
+
+.main-menu__menu-content a {
+            text-decoration: none;
+            text-align: center;
+            color: #444444;
+            display: block;
+            padding: 10px 25px;
+            font-size: .9rem;
+        }
 
 @media (min-width: 530px) {
 
-nav a {
-             font-size: 1rem
-     }
-         }
+.main-menu__menu-content a {
+                font-size: 1rem
+        }
+            }
 
-nav a:hover {
-         background-color: #8DB2DE;
-     }
+.main-menu__menu-content a:hover {
+            background-color: #8DB2DE;
+        }
 
 .wrapper {
     
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
 }
 
 @media (min-width: 530px) {
