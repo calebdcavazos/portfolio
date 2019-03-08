@@ -5,5 +5,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './app/temp/scripts'),
         filename: 'App.js'
-    }
+    },
+    mode: 'development'
 }
+
