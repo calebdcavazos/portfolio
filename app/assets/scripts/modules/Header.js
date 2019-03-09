@@ -17,6 +17,7 @@ class Header {
     toggleTheMenu() {
         this.menuContent.toggleClass("main-menu__menu-content--is-visible");
         this.menu.toggleClass('main-menu__is-toggled');
+        this.menuIcon.toggleClass('main-menu__menu-icon--close-x');
     }
 }
 

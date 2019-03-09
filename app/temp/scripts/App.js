@@ -94,7 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _modules_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/Header */ \"./app/assets/scripts/modules/Header.js\");\n\r\n\r\n\r\nconst header = new _modules_Header__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\n\r\n\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _modules_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/Header */ \"./app/assets/scripts/modules/Header.js\");\n/* harmony import */ var _modules_Contact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/Contact */ \"./app/assets/scripts/modules/Contact.js\");\n\r\n\r\n\r\n\r\nconst header = new _modules_Header__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\nconst contact = new _modules_Contact__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\r\n\r\n\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+
+/***/ }),
+
+/***/ "./app/assets/scripts/modules/Contact.js":
+/*!***********************************************!*\
+  !*** ./app/assets/scripts/modules/Contact.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nclass Contact {\r\n    constructor() {\r\n        this.contact = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.contact');\r\n        this.contactBtn = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.main-menu__contact-btn');\r\n        this.events();\r\n    }\r\n\r\n    events() {\r\n        this.contactBtn.click(toggleTheModal.bind(this));\r\n    }\r\n\r\n    toggleTheModal() {\r\n        this.contact.toggleClass('.contact--is-visible');\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Contact);\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Contact.js?");
 
 /***/ }),
 
@@ -106,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jque
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\n//main-menu__menu-icon\r\n\r\nclass Header {\r\n    constructor() {\r\n        this.menuIcon = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.main-menu__menu-icon');\r\n        this.menuContent = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.main-menu__menu-content');\r\n        this.menu = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.main-menu');\r\n        this.events();\r\n    }\r\n\r\n    events() {\r\n        this.menuIcon.click(this.toggleTheMenu.bind(this));\r\n    }\r\n\r\n    toggleTheMenu() {\r\n        this.menuContent.toggleClass(\"main-menu__menu-content--is-visible\");\r\n        this.menu.toggleClass('main-menu__is-toggled');\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\n//main-menu__menu-icon\r\n\r\nclass Header {\r\n    constructor() {\r\n        this.menuIcon = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.main-menu__menu-icon');\r\n        this.menuContent = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.main-menu__menu-content');\r\n        this.menu = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.main-menu');\r\n        this.events();\r\n    }\r\n\r\n    events() {\r\n        this.menuIcon.click(this.toggleTheMenu.bind(this));\r\n    }\r\n\r\n    toggleTheMenu() {\r\n        this.menuContent.toggleClass(\"main-menu__menu-content--is-visible\");\r\n        this.menu.toggleClass('main-menu__is-toggled');\r\n        this.menuIcon.toggleClass('main-menu__menu-icon--close-x');\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Header.js?");
 
 /***/ }),
 
