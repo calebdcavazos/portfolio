@@ -420,15 +420,16 @@ img {
          background-color: rgba(50, 129, 222, 0.8);
      }
 
+.main-menu__contact-btn {
+         background-color: #D2E8F6;
+         cursor: pointer;
+     }
+
 @media (min-width: 530px) {
 
 .main-menu {
          background-color: rgba(50, 129, 222, 0)
 }
-     }
-
-.main-menu__contact-btn {
-         background-color: #D2E8F6;
      }
 
 .main-menu__is-visible {
@@ -761,7 +762,17 @@ img {
     right: 0;
     opacity: 0;
     visibility: hidden;
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+    transition: all 0.3s ease-out;
 }
+
+.contact--is-visible {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        visibility: visible;
+    }
 
 .contact h3 {
         font-size: 2.5rem;

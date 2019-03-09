@@ -8,6 +8,11 @@
      &__is-toggled {
          background-color: rgba(50, 129, 222, 0.8);
      }
+
+     &__contact-btn {
+         background-color: $mainBlue;
+         cursor: pointer;
+     }
      
 
      @media (min-width: 530px) {
