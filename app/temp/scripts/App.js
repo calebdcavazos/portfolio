@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _modules_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/Header */ \"./app/assets/scripts/modules/Header.js\");\n/* harmony import */ var _modules_Contact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/Contact */ \"./app/assets/scripts/modules/Contact.js\");\n\r\n\r\n\r\n\r\nconst header = new _modules_Header__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\nconst contact = new _modules_Contact__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\r\n\r\n\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _modules_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/Header */ \"./app/assets/scripts/modules/Header.js\");\n/* harmony import */ var _modules_StickyHeader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/StickyHeader */ \"./app/assets/scripts/modules/StickyHeader.js\");\n/* harmony import */ var _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/RevealOnScroll */ \"./app/assets/scripts/modules/RevealOnScroll.js\");\n/* harmony import */ var _modules_Contact__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/Contact */ \"./app/assets/scripts/modules/Contact.js\");\n\r\n\r\n\r\n\r\n\r\n\r\nconst header = new _modules_Header__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\nconst stickyHeader = new _modules_StickyHeader__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\r\nconst revealOnScroll = new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__[\"default\"]();\r\nconst contact = new _modules_Contact__WEBPACK_IMPORTED_MODULE_4__[\"default\"]();\r\n\r\n\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
 
 /***/ }),
 
@@ -119,6 +119,30 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jque
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\n//main-menu__menu-icon\r\n\r\nclass Header {\r\n    constructor() {\r\n        this.menuIcon = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.main-menu__menu-icon');\r\n        this.menuContent = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.main-menu__menu-content');\r\n        this.menu = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.main-menu');\r\n        this.events();\r\n    }\r\n\r\n    events() {\r\n        this.menuIcon.click(this.toggleTheMenu.bind(this));\r\n    }\r\n\r\n    toggleTheMenu() {\r\n        this.menuContent.toggleClass(\"main-menu__menu-content--is-visible\");\r\n        this.menu.toggleClass('main-menu__is-toggled');\r\n        this.menuIcon.toggleClass('main-menu__menu-icon--close-x');\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Header.js?");
+
+/***/ }),
+
+/***/ "./app/assets/scripts/modules/RevealOnScroll.js":
+/*!******************************************************!*\
+  !*** ./app/assets/scripts/modules/RevealOnScroll.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nclass RevealOnScroll {\r\n    constructor() {\r\n        this.itemsToReveal = jquery__WEBPACK_IMPORTED_MODULE_0___default()(\".about\");\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (RevealOnScroll);\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/RevealOnScroll.js?");
+
+/***/ }),
+
+/***/ "./app/assets/scripts/modules/StickyHeader.js":
+/*!****************************************************!*\
+  !*** ./app/assets/scripts/modules/StickyHeader.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nclass StickyHeader {\r\n    constructor() {\r\n        this.siteHeader = jquery__WEBPACK_IMPORTED_MODULE_0___default()(\".site-header\");\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (StickyHeader);\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/StickyHeader.js?");
 
 /***/ }),
 

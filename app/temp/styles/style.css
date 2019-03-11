@@ -543,14 +543,15 @@ img {
             text-align: center;
             color: #444444;
             display: block;
-            padding: 10px 25px;
+            padding: 10px 20px;
             font-size: .9rem;
         }
 
 @media (min-width: 530px) {
 
 .main-menu__menu-content a {
-                font-size: 1rem
+                font-size: 1rem;
+                padding: 10px 25px
         }
             }
 
