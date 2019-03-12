@@ -23,6 +23,7 @@
         height: 300px;
         width: 300px;
 
+
         @media (min-width: 1000px) {
             width: 400px;
             height: 400px;

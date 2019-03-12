@@ -7,15 +7,16 @@ nested = require('postcss-nested'),
 cssImport = require('postcss-import'),
 hexrgba = require('postcss-hexrgba'),
 browserSync = require('browser-sync').create(),
-webpack = require('webpack');
+webpack = require('webpack'),
+modernizr = require('gulp-modernizr');
 
 
 // define often reused variables
 const index = "./app/index.html",
-all_styles = "./app/assets/styles/**/*.css",
-all_js = "./app/assets/scripts/**/*.js",
-main_style = "./app/assets/styles/style.css",
-temp_styles = './app/temp/styles';
+allStyles = "./app/assets/styles/**/*.css",
+allJs = "./app/assets/scripts/**/*.js",
+mainStyle = "./app/assets/styles/style.css",
+tempStyles = './app/temp/styles';
 
 
 //create all functions for gulp to run
@@ -35,6 +36,17 @@ function js(done) {
     done();
   }
 
+  function runModernizr(done) {
+    gulp.src([allStyles, allJs])
+    .pipe(modernizr({
+        "options": [
+            "setClasses"
+        ]
+    }))
+    .pipe(gulp.dest('./app/temp/scripts'));
+    done();
+}
+
 function startBrowser(done) {
     browserSync.init({
         server: {
@@ -44,32 +56,35 @@ function startBrowser(done) {
 }
 
 function css(done) {
-    gulp.src(main_style)
+    gulp.src(mainStyle)
     .pipe(postcss([cssImport, cssvars, nested, hexrgba, autoprefixer]))
     .on('error', function() {
         this.emit('end');
     })
-    .pipe(gulp.dest(temp_styles));
+    .pipe(gulp.dest(tempStyles));
     browserSync.reload();
     done();
 }
 
-function watch_index() {
+function watchIndex() {
     gulp.watch(index, html);
 }
 
-function watch_css() {
-    gulp.watch(all_styles, css);
+function watchCss() {
+    gulp.watch(allStyles, css);
 }
 
-function watch_js() {
-    gulp.watch(all_js, js);
+function watchJs() {
+    gulp.watch(allJs, gulp.parallel(js, runModernizr));
 }
+
+
 
 
 //define gulp tasks
 gulp.task('html', html);
 gulp.task('js', js);
 gulp.task('css', css);
+gulp.task('modernizr', runModernizr);
 gulp.task('default', gulp.parallel(html, js));
-gulp.task('watch', gulp.parallel(watch_index, watch_css, watch_js, startBrowser));
+gulp.task('watch', gulp.parallel(watchIndex, watchCss, watchJs, startBrowser));
