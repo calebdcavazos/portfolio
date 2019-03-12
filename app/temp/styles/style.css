@@ -553,6 +553,10 @@ img {
                 font-size: 1rem;
                 padding: 10px 25px
         }
+
+                .main-menu__menu-content a.is-current-link {
+                    background-color: #8DB2DE;
+                }
             }
 
 .main-menu__menu-content a:hover {
@@ -635,14 +639,15 @@ img {
 
 .about__image {
         border-radius: 50%;
-        height: auto;
+        height: 300px;
         width: 300px;
     }
 
 @media (min-width: 1000px) {
 
 .about__image {
-            width: 400px
+            width: 400px;
+            height: 400px
     }
         }
 
@@ -839,3 +844,16 @@ img {
 .contact__close:hover {
             color: #8DB2DE;
         }
+
+.reveal-item {
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    transition: all  1.5s ease-out;
+}
+
+.reveal-item--is-visible {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }

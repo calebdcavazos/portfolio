@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="temp/styles/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <script src="temp/scripts/Vendor.js"></script>
 </head>
 
 <body>
@@ -24,8 +26,8 @@
 
             <nav class="main-menu__menu-content">
                 <ul id="top-menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about" id="about-link" class="page-link">About</a></li>
+                    <li><a href="#portfolio" id="portfolio-link" class="page-link">Portfolio</a></li>
                     <li><a class="main-menu__contact-btn">Get in Touch</a></li>
                 </ul>
             </nav>
@@ -34,7 +36,7 @@
 
     <!-- Hero Section -->
 
-    <div class="hero">
+    <div class="hero page-section">
         <div class="hero__text-content">
             <h1>Hi, I'm Caleb and I'm a web developer.</h1>
         </div>
@@ -52,7 +54,7 @@
     <!-- About Section -->
 
     <div class="wrapper">
-        <div id="about" class="about">
+        <div id="about" class="about page-section" data-matching-link="#about-link">
             <img src="assets/images/me.jpg" alt="Me" class="about__image about__centered">
             <div class="about__text-box  about__centered">
                 <h2>About</h2>
@@ -69,7 +71,7 @@
     <!-- Portfolio Section -->
 
     <div class="wrapper">
-        <div id="portfolio" class="portfolio">
+        <div id="portfolio" class="portfolio page-section" data-matching-link="#portfolio-link">
 
             <div class="portfolio__flex-container">
                 <img src="assets/images/lansdowne_screenshot.png" alt="Lansdowne"

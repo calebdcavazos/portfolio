@@ -128,6 +128,10 @@
             @media (min-width: 530px) {
                 font-size: 1rem;
                 padding: 10px 25px;
+
+                &.is-current-link {
+                    background-color: $darkerBlue;
+                }
             }
         }
 

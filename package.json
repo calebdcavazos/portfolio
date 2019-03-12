@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "dependencies": {
     "jquery": "^3.3.1",
-    "normalize.css": "^8.0.1"
+    "jquery-smooth-scroll": "^2.2.0",
+    "normalize.css": "^8.0.1",
+    "picturefill": "^3.0.3",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
@@ -15,6 +18,7 @@
     "babel-preset-latest": "^6.24.1",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
+    "gulp-modernizr": "^3.2.0",
     "gulp-postcss": "^8.0.0",
     "gulp-watch": "^5.0.1",
     "postcss-hexrgba": "^1.0.1",
