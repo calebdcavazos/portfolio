@@ -625,6 +625,10 @@ img {
 }   
     }
 
+.about__sub-header {
+        color: #8DB2DE;
+    }
+
 .about__text-box {
         padding: 5px;
     }
@@ -633,9 +637,38 @@ img {
 
 .about__text-box {
             padding: 18px;
-            width: 30%
+            width: 40%
     }
         }
+
+.about__text-box__tech-list {
+            display: flex;
+            padding: 1rem;
+        }
+
+.about__text-box__tech-item {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            justify-content: center;
+            margin: auto;
+            padding: 1rem;
+            text-align: center;
+        }
+
+.about__text-box__icon {
+            font-size: 2rem;
+            margin: 0.3rem;
+            padding: 0;
+        }
+
+@media (min-width: 530px) {
+
+.about__text-box__icon {
+                font-size: 3rem;
+                margin: 1rem
+        }
+            }
 
 .about__image {
         border-radius: 50%;
