@@ -23,3 +23,8 @@ img {
 .text-center {
     text-align: center;
 }
+
+.accessibility {
+    size: 0.1rem;
+    opacity: 0;
+}
