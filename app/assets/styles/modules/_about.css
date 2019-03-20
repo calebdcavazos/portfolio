@@ -5,6 +5,15 @@
     font-size: 1rem;
     flex-direction: column;
 
+    a {
+        color: $mainGray;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $darkerBlue;
+    }
+
     @media (min-width: 1000px) {
      flex-direction: row;   
     }

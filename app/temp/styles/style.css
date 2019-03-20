@@ -625,6 +625,15 @@ img {
 
 }
 
+.about a {
+        color: #444444;
+        text-decoration: none;
+    }
+
+.about a:hover {
+        color: #8DB2DE;
+    }
+
 @media (min-width: 1000px) {
 
 .about {
