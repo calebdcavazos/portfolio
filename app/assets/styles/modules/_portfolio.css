@@ -24,8 +24,8 @@
         height: auto;
 
         @media (min-width: 800px) {
-            width: 400px;
-            height: 225px;
+            width: 480px;
+            height: 270px;
         }
     }
     
@@ -55,10 +55,7 @@
     &__order-first {
         @media (min-width: 800px) {
             order: 1;
-
-            h3 {
-                text-align: right;
-            }
+            text-align: right;
         }
     }
 
@@ -66,6 +63,15 @@
         @media (min-width: 800px) {
             order: 2;
         }
+    }
+
+    a {
+        color: $mainGray;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $darkerBlue;
     }
 
 }

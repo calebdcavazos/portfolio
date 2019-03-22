@@ -751,8 +751,8 @@ img {
 @media (min-width: 800px) {
 
 .portfolio img {
-            width: 400px;
-            height: 225px
+            width: 480px;
+            height: 270px
     }
         }
 
@@ -788,12 +788,9 @@ img {
 @media (min-width: 800px) {
 
 .portfolio__order-first {
-            order: 1
+            order: 1;
+            text-align: right
     }
-
-            .portfolio__order-first h3 {
-                text-align: right;
-            }
         }
 
 @media (min-width: 800px) {
@@ -802,6 +799,15 @@ img {
             order: 2
     }
         }
+
+.portfolio a {
+        color: #444444;
+        text-decoration: none;
+    }
+
+.portfolio a:hover {
+        color: #8DB2DE;
+    }
 
 .contact {
     position: fixed;
